@@ -5,7 +5,7 @@ import com.pluralsight.service.RideService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -22,7 +22,7 @@ public class RideController {
 		return rideService.getRides();
 	}
 
-	@PutMapping("/ride")
+	@PostMapping("/ride")
 	public @ResponseBody Ride createRide(@RequestBody Ride ride) {
 		return rideService.createRide(ride);
 	}
