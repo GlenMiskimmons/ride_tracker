@@ -20,9 +20,9 @@ public class JdbcConfig {
     }
 
     @Bean
-    public JdbcTemplate jdbcTemplate() {
+    public JdbcTemplate jdbcTemplate(DriverManagerDataSource driverManagerDataSource) {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
-        jdbcTemplate.setDataSource(driverManagerDataSource());
+        jdbcTemplate.setDataSource(driverManagerDataSource);
 
         return jdbcTemplate;
     }
