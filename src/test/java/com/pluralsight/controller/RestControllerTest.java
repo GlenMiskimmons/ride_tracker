@@ -2,6 +2,8 @@ package com.pluralsight.controller;
 
 import java.util.List;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +14,9 @@ import com.pluralsight.model.Ride;
 import org.junit.Test;
 
 public class RestControllerTest {
+
+	private static final Log LOGGER = LogFactory.getLog(RestControllerTest.class);
+	private static final String LOG_RIDE_PREFIX = "Ride: ";
 
 	@Test(timeout=15000)
 	public void testGetRides() {
@@ -25,13 +30,13 @@ public class RestControllerTest {
 
 		if (rides != null) {
 			for (Ride ride : rides) {
-				System.out.println("Ride name: " + ride.getName());
+				LOGGER.info("Ride name: " + ride.getName());
 			}
 		}
 	}
 
 	@Test(timeout=15000)
-	public void testCreateRides() {
+	public void testCreateRide() {
 		RestTemplate restTemplate = new RestTemplate();
 
 		Ride ride = new Ride();
@@ -40,7 +45,7 @@ public class RestControllerTest {
 
 		ride = restTemplate.postForObject("http://localhost:8080/ride_tracker/ride", ride, Ride.class);
 
-		System.out.println("Ride: " + ride);
+		LOGGER.info(LOG_RIDE_PREFIX + ride);
 	}
 
 	@Test(timeout=15000)
@@ -50,7 +55,7 @@ public class RestControllerTest {
 		Ride ride = restTemplate.getForObject("http://localhost:8080/ride_tracker/ride/1", Ride.class);
 
 		if (ride != null) {
-			System.out.println("Ride: " + ride.getName());
+			LOGGER.info(LOG_RIDE_PREFIX + ride.getName());
 		}
 	}
 
@@ -65,7 +70,7 @@ public class RestControllerTest {
 
 			restTemplate.put("http://localhost:8080/ride_tracker/ride/", ride);
 
-			System.out.println("Ride: " + ride.getName());
+			LOGGER.info(LOG_RIDE_PREFIX + ride.getName());
 		}
 	}
 
@@ -80,7 +85,14 @@ public class RestControllerTest {
 	public void testDelete() {
 		RestTemplate restTemplate = new RestTemplate();
 
-		restTemplate.delete("http://localhost:8080/ride_tracker/delete/17");
+		restTemplate.delete("http://localhost:8080/ride_tracker/delete/18");
+	}
+
+	@Test(timeout=15000)
+	public void testException() {
+		RestTemplate restTemplate = new RestTemplate();
+
+		restTemplate.getForObject("http://localhost:8080/ride_tracker/test", Ride.class);
 	}
 
 }

@@ -30,7 +30,7 @@ CREATE TABLE `ride` (
   `duration` int(11) NOT NULL,
   `ride_date` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `ride` (
 
 LOCK TABLES `ride` WRITE;
 /*!40000 ALTER TABLE `ride` DISABLE KEYS */;
-INSERT INTO `ride` VALUES (1,'Bobsled Trail Ride',36,'2019-11-19 04:25:47'),(2,'Willow Trail Ride',30,'2019-11-19 04:25:47'),(3,'Round Valley Ride',30,'2019-11-19 04:25:47'),(16,'Sagebrush Ride',30,'2019-11-19 04:25:47'),(17,'YellowFork Ride',30,'2019-11-19 04:25:47');
+INSERT INTO `ride` VALUES (1,'Bobsled Trail Ride',39,'2019-11-19 21:17:16'),(2,'Willow Trail Ride',30,'2019-11-19 21:17:16'),(3,'Round Valley Ride',30,'2019-11-19 21:17:16'),(16,'Sagebrush Ride',30,'2019-11-19 21:17:16'),(18,'YellowFork Ride',30,'2019-11-19 21:17:16');
 /*!40000 ALTER TABLE `ride` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-19  4:32:07
+-- Dump completed on 2019-11-19 21:40:20

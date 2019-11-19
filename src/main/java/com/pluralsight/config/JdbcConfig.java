@@ -1,11 +1,14 @@
-package com.pluralsight;
+package com.pluralsight.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
+@EnableTransactionManagement
 public class JdbcConfig {
 
     @Bean
@@ -25,6 +28,14 @@ public class JdbcConfig {
         jdbcTemplate.setDataSource(driverManagerDataSource);
 
         return jdbcTemplate;
+    }
+
+    @Bean
+    public DataSourceTransactionManager dataSourceTransactionManager(DriverManagerDataSource driverManagerDataSource) {
+        DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
+        transactionManager.setDataSource(driverManagerDataSource);
+
+        return transactionManager;
     }
 
 }
