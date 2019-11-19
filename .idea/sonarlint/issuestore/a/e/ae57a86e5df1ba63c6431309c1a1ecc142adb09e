@@ -1,0 +1,13 @@
+
+nsquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(Ž°þÞüÿÿÿÿ8Ê§ùûç-
+isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(Â¡¤Æ8Ê§ùûç-
+isquid:CommentedOutCodeLine9"<This block of commented-out lines of code should be removed.(‚ŽÐö8Ê§ùûç-
+nsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(˜è‰ýýÿÿÿÿ8Ê§ùûç-
+isquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(¬²àÝ8Ê§ùûç-
+isquid:CommentedOutCodeLine5"<This block of commented-out lines of code should be removed.(˜…§Ä8Ê§ùûç-
+nsquid:CommentedOutCodeLine="<This block of commented-out lines of code should be removed.(Í’îÿÿÿÿÿ8Ê§ùûç-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦Î–ù8®þšýç-
+Msquid:S1068"*Remove this unused "LOGGER" private field.(×ÂŠÝøÿÿÿÿ8Ê§ùûç-
+]squid:UselessImportCheck"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8ÄÜÅýç-
+Ysquid:UselessImportCheck"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8ÄÜÅýç-
+tsquid:UselessImportCheck"DRemove this unused import 'org.springframework.jdbc.core.RowMapper'.(¦¬ÀÙùÿÿÿÿ8ÄÜÅýç-

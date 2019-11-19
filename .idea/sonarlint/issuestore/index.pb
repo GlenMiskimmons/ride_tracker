@@ -11,3 +11,17 @@ l
 <src/main/java/com/pluralsight/controller/RideController.java,e\8\e808ff67413f94b3a0eaff330df5753c18b2c05a
 ]
 -src/main/java/com/pluralsight/JdbcConfig.java,2\a\2ada1b44387006a102aa459a09492fd9a64128a5
+a
+1src/main/webapp/WEB-INF/config/servlet-config.xml,3\a\3ad27e8859148283d9952dd28df78acc4f02dfa7
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+I
+src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+]
+-src/main/java/com/pluralsight/model/Ride.java,f\c\fc1462e2c32d522f32992653f529890317dca747
+j
+:src/main/java/com/pluralsight/service/RideServiceImpl.java,8\0\803d925c51933b67a473e0a61c87db55e225fefb
+f
+6src/main/java/com/pluralsight/service/RideService.java,a\7\a7b3db21b3693683671de243285cd3c0d0e00c5a
+p
+@src/main/java/com/pluralsight/repository/util/RideRowMapper.java,6\f\6f51ed39632e5b5d6851dd44cf4418052d61cf2a
